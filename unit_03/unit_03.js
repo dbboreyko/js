@@ -85,8 +85,21 @@ document.querySelector('.b-8').onclick = f8;
 // Task 9
 
 function f9(){
-   
-
+   let num = document.querySelector('.i-9').value;
+   let flat = 0;
+   if (num >= 1 && num <= 32){
+    flat = 1;
+   }
+   else if (num >= 33 && num <= 43){
+    flat = 2;
+   }
+   else if (num >= 44 && num <= 64){
+    flat = 3;
+   }
+   else{
+    flat = 0;
+   }
+   document.querySelector('.out-9').textContent = flat;
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -94,7 +107,8 @@ document.querySelector('.b-9').onclick = f9;
 // Task 10
 
 function f10(){
-   
+   let num = document.querySelector('.s-100').value;
+   document.querySelector('.out-10').textContent = num;
 
 }
 
@@ -103,15 +117,10 @@ document.querySelector('.b-10').onclick = f10;
 // Task 11
 
 function f11(){
-   
-
+   document.querySelector('.out-11').textContent = this.value;
 }
 
 document.querySelector('.s-110').onchange = f11;
-
-
- 
- 
  
 
 // Task 12
@@ -131,7 +140,8 @@ document.querySelector('.s-110').onchange = f11;
 
 
 function f13() {
-   
+   let i130 = document.querySelector('.i-130').value;
+   document.querySelector('.out-13').textContent = typeof i130;
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -166,7 +176,7 @@ function f14() {
 
 document.querySelector('.b-14').onclick = f14;
 
-// Task     15
+// Task 15
 
 
 function f15() {

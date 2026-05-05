@@ -133,7 +133,7 @@ let count = 0;
 function t20() {
     count++;
     let out = document.querySelector('.out-20');
-    out.textContent = count.toString;
+    out.textContent = count;
 }
 
 document.querySelector('.b-20').onclick = t20;
